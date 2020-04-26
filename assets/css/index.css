@@ -1,0 +1,22 @@
+.box{
+    width: auto;
+    height: auto;  
+    padding: 50px;
+    border: 2px solid gray;
+    border-radius: 50px;
+}
+
+.bordermargin{
+    margin-top: 24px;;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.contain-hot{
+    margin-top: 100px;
+}

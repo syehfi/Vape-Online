@@ -1,0 +1,84 @@
+html,
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+.nav-top {
+	background: #302b63;
+}
+
+.nav-top h1 {
+	margin: 0;
+	font-size: 26pt;
+	color: white;
+	margin-left: 25px;
+}
+
+
+/* define a fixed width for the entire menu */
+.navigation {
+	display: flex;
+	position: relative;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu,
+.submenu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	flex: 1 1 auto;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	color: #fff;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+	background-color: #24243e;
+}
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+	display: block;
+	max-height: 200px;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: all 0.5s ease-out;
+}
+
+.nav-col {
+	float: left;
+	background-color: #302b63;
+	height: -webkit-fill-available;
+	width: 300px;
+}
+
+.content {
+	float: left;
+	margin-top: 50px;
+	margin-left: 25px;
+}
+
+p {
+	font-size: 16pt;
+	text-align: center;
+	color: white;
+}
