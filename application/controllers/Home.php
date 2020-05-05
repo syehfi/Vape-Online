@@ -20,7 +20,9 @@
         {
             $data['produk'] = $this->produk->getAllProduk();
             $this->load->view('./template/header_home', $data, FALSE);
-            $this->load->view('home/index', $data);           
+            $this->load->view('home/index', $data);       
+            $this->load->view('./template/footer');
+                
         }
 
         
