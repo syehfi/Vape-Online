@@ -15,7 +15,7 @@
         <div class="col-xs-6 col-md-3">
           <h6>Kategori</h6>
           <ul class="footer-links">
-            <li><a href="<?= base_url(); ?>katalog">Pod</a></li>
+            <li><a href="<?= base_url(); ?>katalog/pod">Pod</a></li>
             <li><a href="<?= base_url(); ?>katalog">Mod</a></li>
             <li><a href="<?= base_url(); ?>katalog">E-Liquid</a></li>
           </ul>

@@ -20,6 +20,7 @@ class Katalog extends CI_Controller
     public function index()
     {
         $data['produk'] = $this->produk->getAllProduk();
+        // $data['produk'] = $this->db->get_where('produk', ['kategori' => 'Pod'])->result_array();
         $this->load->view('./template/header_home', $data, FALSE);
         $this->load->view('home/katalog', $data);
     }
@@ -72,6 +73,13 @@ class Katalog extends CI_Controller
             redirect('home/index');
             
         }
+    }
+
+    public function pod()
+    {
+        $data['produk'] = $this->db->get_where('produk', ['kategori' => 'Pod'])->result_array();
+        $this->load->view('./template/header_home', $data, FALSE);
+        $this->load->view('home/katalog', $data);
     }
 }
     
